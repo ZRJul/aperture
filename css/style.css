@@ -77,6 +77,7 @@ header nav ul li:last-of-type a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
 }
 
 .banner_text {
@@ -116,7 +117,130 @@ header nav ul li:last-of-type a{
     line-height: 20px;
     color: #C0C0C0;
 }
-
-.about {
-    width: auto;
+.fixed_information li:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/timer.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    top: 6px;
 }
+
+.fixed_information li:nth-child(2):before {
+    background-image: url("../images/circle.svg");
+}
+
+.fixed_information li:nth-child(3):before {
+    background-image: url("../images/iso.svg");
+    width: 32px;
+}
+
+.fixed_information li:nth-child(4):before {
+    background-image: url("../images/Fill-1.svg");
+    width: 10px;
+}
+
+.fixed_information {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.fixed_information li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.past_clients,.for_you{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-color: #000000;
+}
+
+.past_clients_text {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.past_clients h3,.for_you h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.past_clients p,.for_you p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.past_clients p {
+    margin-top: 15px;
+    margin-bottom: 42px;
+ }
+
+.past_clients_icons {
+    max-width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 46px;
+}
+
+.for_you_info {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.for_you p {
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.for_you a {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 11px 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.for_you a:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/get in touch.svg");
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
