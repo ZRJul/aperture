@@ -76,16 +76,18 @@ header nav ul li:last-of-type a{
     background-image: url('../images/backgr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    box-sizing: border-box;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 71px;
 }
 
 .banner_text {
-    box-sizing: border-box;
     max-width: 600px;
-    padding-top: 400px;
     text-align: center;
-    margin: auto;
 }
 
 .main_banner h3 {
@@ -160,6 +162,42 @@ header nav ul li:last-of-type a{
     margin-left: 16px;
 }
 
+.portfolio {
+    background-image: url("../images/mount.jpg");
+    min-height: 600px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.portfolio_text{
+    max-width: 298px;
+    margin-right: 62px;
+}
+
+.portfolio_text h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.portfolio_text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+
 .past_clients,.for_you{
     padding-top: 120px;
     padding-bottom: 100px;
@@ -199,13 +237,18 @@ header nav ul li:last-of-type a{
 .past_clients_icons {
     max-width: 1168px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 40px 46px;
+    padding-top: 46px;
+}
+.owl-carousel .owl-item img{
+    max-width: 128px;
+    margin: auto;
+    height: 100px;
+    position: relative;
 }
 
 .for_you_info {
-    max-width: 600px;
     margin: auto;
     text-align: center;
 }
@@ -241,6 +284,27 @@ header nav ul li:last-of-type a{
     top: 10px;
 }
 
+.owl-dots .owl-dot span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    display: inline-block;
+    margin-right: 20px;
+}
 
+.owl-dot.active span{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.owl-dots{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
 
 
